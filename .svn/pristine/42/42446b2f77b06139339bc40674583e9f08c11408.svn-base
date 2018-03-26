@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fi.jyu.mit.fxgui.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="fxLukio.LukioGUIController">
+   <bottom>
+      <HBox spacing="10.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <Button text="_Uusi oppilas">
+               <tooltip>
+                  <Tooltip text="Empty Tooltip" />
+               </tooltip>
+            </Button>
+            <Button mnemonicParsing="false" text="Tallenna">
+               <tooltip>
+                  <Tooltip text="Empty Tooltip" />
+               </tooltip>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <Label text="Oppilaat" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <ListChooser rivit="Jurvanen Noora&#10;Koivu Saku&#10;Nakkila Joel&#10;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </left>
+   <center>
+      <ScrollPane fitToWidth="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <GridPane hgap="10.0" prefWidth="191.0">
+              <columnConstraints>
+                <ColumnConstraints fillWidth="false" halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label text="Nimi" />
+                  <Label text="Hetu" GridPane.rowIndex="1" />
+                  <Label text="Aloitusvuosi" GridPane.rowIndex="2" />
+                  <Label text="Katuosoite" GridPane.rowIndex="3" />
+                  <Label text="Postiosoite" GridPane.rowIndex="5" />
+                  <Label text="Sähköposti" GridPane.rowIndex="7" />
+                  <Label text="Puhelinnumero" GridPane.rowIndex="6" />
+                  <Label text="Id" GridPane.rowIndex="8" />
+                  <Label text="Postinumero" GridPane.rowIndex="4" />
+                  <TextField text="Jurvanen Noora " GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" />
+                  <TextField text="190595-666S" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                  <TextField text="2009" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField text="Naamadkalala 15" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField text="15420" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField text="Perähikiä" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField text="0402314657" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField text="ihqpihq@suomi24.fi" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField text="1" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

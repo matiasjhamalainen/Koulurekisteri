@@ -1,0 +1,103 @@
+package fxLukio;
+
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
+import fi.jyu.mit.fxgui.Dialogs;
+import fi.jyu.mit.fxgui.ModalController;
+import javafx.application.Platform;
+import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+
+/**
+ * @author majuhama
+ * @version 19.1.2016
+ *
+ */
+public class LukioGUIController {//
+	
+	@FXML
+	private Button buttonTallenna;
+    
+	@FXML
+    private MenuItem menuTallenna;
+		
+	@FXML
+	private MenuItem buttonTulosta;
+	
+    @FXML
+    private Button buttonUusiOppilas;
+    
+    @FXML
+    private MenuItem buttonPoistaOppilas;
+    
+    @FXML
+    private MenuItem buttonAbout;
+    
+    @FXML
+    private MenuItem buttonSulje;
+    
+    /**
+     * Tallentaa tiedot
+     */
+    @FXML
+    void tallenna() {
+    	Dialogs.showMessageDialog("Ei osata viel‰ tallentaa");
+    }
+    
+    @FXML
+    /**
+     * Sulkee ohjelman ja tallentaa tiedot ensin.
+     */
+    void sulje() {
+       tallenna();
+       Platform.exit();
+    }
+    
+    /**
+     * Tulostaa valitut tiedot.
+     */
+    @FXML
+    void tulosta() {
+    	//TulostusController.tulosta(null);
+    	Dialogs.showMessageDialog("Ei osata viel‰ tulostaa");
+    }
+    
+    /**
+     * Tuo n‰kyviin about-ikkunan, jossa tietoja ohjelmasta.
+     */
+    @FXML
+    void about() {
+    	ModalController.showModal(LukioGUIController.class.getResource("LukionAboutView.fxml"), "Lukio", null, "");
+    }
+
+    /**
+     * Poistaa oppilaan rekisterist‰.
+     */
+    @FXML
+    void poistaOppilas() {
+    	// Dialogs.showMessageDialog("Ei osata viel‰ lis‰t‰");
+    	// Dialogs.showMessageDialog("Tiedosto kelmit/nimet.dat ei aukea");
+    	Dialogs.showQuestionDialog("Poisto?", "Poistetaanko oppilas: Jurvanen Noora", "Kyll‰", "Ei");
+    }
+
+    /**
+     * Lis‰‰ rekisteriin uuden oppilaan.
+     */
+    @FXML
+    void uusiOppilas() {
+    	Dialogs.showMessageDialog("Ei osata viel‰ lis‰t‰ uutta oppilasta");
+    	//Dialogs.showMessageDialog("Tiedosto tiedot/opiskelijat.dat ei aukea");
+    	//Dialogs.showQuestionDialog("Poisto?", "Poistetaanko oppilas: Jurvanen Noora", "Kyll‰", "Ei");
+    }
+
+}

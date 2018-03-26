@@ -1,0 +1,4 @@
+!https://trac.cc.jyu.fi/projects/ohj2ht/wiki/k2016/suunnitelmat/laolkorh = Suunnitelma Wikissä
+kuvat/paaikkunak.png = ohjelman pääikkuna (tehty paintilla)
+kuvat/avaak.png      = kuva ohjelman alusta (tehty paintilla)
+kuvat/eiaukeak.png   = virheilmoitus jos tiedostoa ei ole (tehty paintilla)

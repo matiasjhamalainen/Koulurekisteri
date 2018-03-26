@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="tags/vaihe2/src"/>
+	<classpathentry kind="src" path="tags/vaihe3/src"/>
+	<classpathentry kind="src" path="tags/vaihe4/src"/>
+	<classpathentry kind="src" path="tags/vaihe5/src"/>
+	<classpathentry kind="src" path="tags/vaihe6/src"/>
+	<classpathentry kind="src" path="trunk/src"/>
+	<classpathentry kind="lib" path="Ali.jar"/>
+	<classpathentry kind="lib" path="fxgui.jar"/>
+	<classpathentry kind="lib" path="tags/vaihe3/fxgui.jar"/>
+	<classpathentry kind="lib" path="tags/vaihe3/Lukio.jar"/>
+	<classpathentry kind="lib" path="tags/vaihe4/fxgui.jar"/>
+	<classpathentry kind="lib" path="tags/vaihe4/Lukio.jar"/>
+	<classpathentry kind="lib" path="tags/vaihe5/fxgui.jar"/>
+	<classpathentry kind="lib" path="tags/vaihe5/Lukio.jar"/>
+	<classpathentry kind="lib" path="tags/vaihe6/Ali.jar"/>
+	<classpathentry kind="lib" path="tags/vaihe6/fxgui.jar"/>
+	<classpathentry kind="lib" path="tags/vaihe6/Lukio.jar"/>
+	<classpathentry kind="lib" path="trunk/Ali.jar"/>
+	<classpathentry kind="lib" path="trunk/fxgui.jar"/>
+	<classpathentry kind="lib" path="trunk/Lukio.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="tags/vaihe3/bin"/>
+</classpath>
